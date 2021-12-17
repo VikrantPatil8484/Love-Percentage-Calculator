@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Love_Calculator.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/de0ab86947.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box">
+        <input type="text" placeholder="Enter your Name">
+
+        <i class="fas fa-plus-circle"></i>
+
+        <input type="text" placeholder="Enter your Lover Name" class="lo">
+
+        <button id="button" onclick="result()">Click</button>
+
+        <p id="result"></p>
+
+        <h3 id="comment"></h3>
+</div>
+
+
+<script type="text/javascript">
+    var a = document.getElementById('result');
+    var comment = document.getElementById('comment');
+
+function result() {
+    b = Math.floor(Math.random() * 100);
+    a.innerHTML = 'Love' + ':' + ' ' + b + '%';
+    if (b < 50) {
+        comment.innerHTML = 'LOVE EACH OTHER MORER!❤️';
+        comment.style.color = 'red';
+
+    }
+    else {
+        comment.innerHTML = 'GOD BLESS YOUR RELATIONSHIP.... 🖤';
+        comment.style.color = 'red';
+    }
+
+}
+</script>
+</body>
+</html>
